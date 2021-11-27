@@ -1,0 +1,53 @@
+.container {
+  &.show-nav {
+    & .circle {
+    }
+
+    & + nav li {
+    }
+  }
+
+  .circle-container {
+    .circle {
+      & button {
+        &:focus {
+        }
+
+        &#open {
+        }
+
+        &#close {
+        }
+      }
+    }
+  }
+
+  .content {
+    & img {
+    }
+
+    & h1 {
+    }
+
+    & small {
+    }
+
+    & p {
+    }
+  }
+}
+
+nav {
+  & ul {
+    & li {
+      & i {
+      }
+
+      & + li {
+      }
+
+      & + li + li {
+      }
+    }
+  }
+}
