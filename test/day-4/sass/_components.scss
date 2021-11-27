@@ -1,53 +1,40 @@
-.container {
-  &.show-nav {
-    & .circle {
-    }
+.search {
+  position: relative;
+  height: 5rem;
 
-    & + nav li {
-    }
+  & .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    height: 5rem;
+    width: 5rem;
+    transition: width 0.3s ease;
   }
 
-  .circle-container {
-    .circle {
-      & button {
-        &:focus {
-        }
-
-        &#open {
-        }
-
-        &#close {
-        }
-      }
-    }
+  .btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    transition: transform 0.3s ease;
   }
 
-  .content {
-    & img {
-    }
-
-    & h1 {
-    }
-
-    & small {
-    }
-
-    & p {
-    }
+  .btn:focus,
+  .input:focus {
+    outline: none;
   }
-}
 
-nav {
-  & ul {
-    & li {
-      & i {
-      }
+  &.active .input {
+    width: 20rem;
+  }
 
-      & + li {
-      }
-
-      & + li + li {
-      }
-    }
+  &.active .btn {
+    transform: translateX(19.8rem);
   }
 }
