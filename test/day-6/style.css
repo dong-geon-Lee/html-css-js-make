@@ -1,9 +1,48 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-  font-family: "Muli", sans-serif;
-  background-color: #333;
-  color: #222;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
-  margin: 0; }
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.box {
+  background-color: steelblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0%);
+}
