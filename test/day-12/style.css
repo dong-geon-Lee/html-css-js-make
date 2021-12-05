@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin: 3rem;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 60rem;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.faq {
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  border: 1px solid black;
+  box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.faq.active {
+  padding: 3rem 5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  border: 1px solid black;
+  box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  position: absolute;
+  font-size: 7rem;
+  font-family: "Font Awesome 5 Free";
+  color: green;
+  opacity: 0.2;
+}
+
+.faq.active::before {
+  top: 35%;
+  left: 5%;
+  transform: translate(-80%, -70%) rotateY(180deg);
+}
+
+.faq.active::after {
+  top: 45%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-text {
+  display: none;
+  margin: 0 3rem;
+}
+
+.faq.active .faq-text {
+  display: block;
+  margin: 2rem 0 1rem;
+}
+
+.faq-toggle {
+  border: none;
+  background-color: transparent;
+  height: 3rem;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq-toggle .fas.fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fas.fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle .fas.fa-times {
+  display: block;
+}
+
+.faq.active .faq-toggle {
+  background-color: rgba(206, 8, 8, 0.404);
+  border-radius: 50%;
+}
