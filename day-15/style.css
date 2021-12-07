@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 5rem;
+}
+
+.counter {
+  font-size: 6rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: goldenrod;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.counter {
+  color: red;
+  font-size: 5rem;
+}
+
+.text {
+  color: rgb(0, 17, 17);
+  font-weight: bold;
+}
+
+i {
+  color: blue;
+}

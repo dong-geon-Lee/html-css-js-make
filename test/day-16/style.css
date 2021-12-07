@@ -1,0 +1,86 @@
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.cup {
+  background-color: #fff;
+  width: 12rem;
+  height: 24rem;
+  border: 4px solid var(--border-color);
+  border-radius: 0 0 4rem 4rem;
+  margin: 2rem;
+  color: var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.remained {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.cups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 33rem;
+}
+
+.small-cup {
+  border-radius: 0 0 2rem 2rem;
+  border: 4px solid var(--border-color);
+  width: 5rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: #fff;
+  color: var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.small-cup.full {
+  background-color: var(--fill-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 100%;
+
+  border-radius: 0 0 3rem 3rem;
+  transition: all 0.3s ease;
+}
