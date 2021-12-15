@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
 
 const getRepos = async (username) => {
   const repos = document.getElementById("repos");
-  console.log(repos, "조회");
+
   try {
     const { data } = await axios.get(APIURL + username + "/repos");
     console.log(data);
