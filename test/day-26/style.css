@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -8,11 +10,89 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
+}
+
+.slider-container {
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-slide {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 35%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-slide > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-slide div h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.left-slide div p {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.right-slide {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  width: 65%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.right-slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.action-buttons {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+
+button {
+  border: none;
+  padding: 1.2rem;
+  color: #ccc;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.up-button {
+  transform: translate(-100%, -100%);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }

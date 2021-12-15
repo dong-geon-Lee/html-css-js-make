@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2a2a72;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 60rem;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(154, 160, 185, 0.05);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 80rem;
+  background-color: #4c2885;
+  border-radius: 2rem;
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 1rem solid #2a2a72;
+  width: 15rem;
+  height: 15rem;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 40rem;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form {
+    max-width: 37.5rem;
+  }
+}
