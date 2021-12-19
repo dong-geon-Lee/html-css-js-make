@@ -7,6 +7,8 @@ html {
 }
 
 body {
+  background-color: #3b3b98;
+  color: #fff;
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
@@ -15,4 +17,66 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding: 1rem;
+}
+
+h2 {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+.container {
+  background-color: #23235b;
+  box-shadow: 0 0.2rem 1rem rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  width: 35rem;
+  max-width: 100%;
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  padding: 1.2rem 1rem;
+  height: 5rem;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 4rem);
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
 }

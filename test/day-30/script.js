@@ -12,6 +12,7 @@ input.addEventListener("input", (e) => {
 const textCreate = () => {
   const viewText = mainText.slice(0, idx);
   text.textContent = viewText;
+
   idx++;
 
   if (idx > mainText.length) {
