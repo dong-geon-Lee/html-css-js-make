@@ -16,3 +16,82 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: red;
+}
+
+.toggle-container {
+  width: 22rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+label {
+  width: 10rem;
+  height: 4.5rem;
+  background-color: #eee;
+  border-radius: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+span {
+  margin-left: 1.5rem;
+  color: blue;
+}
+
+.ball {
+  background-color: yellowgreen;
+  position: absolute;
+  top: 0.7rem;
+  left: 0.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + label {
+  background-color: rebeccapurple;
+}
+
+.toggle:checked + label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(5rem) scale(1);
+  }
+
+  50% {
+    transform: translateX(3rem) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(3rem) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(5rem) scale(1);
+  }
+}
