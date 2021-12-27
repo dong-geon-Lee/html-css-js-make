@@ -16,3 +16,74 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.magic {
+  background-color: rgb(255, 174, 0);
+  padding: 1.2rem 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.magic:active {
+  transform: translateY(2px);
+}
+
+.magic:focus {
+  outline: none;
+}
+
+.boxes {
+  width: 50rem;
+  height: 50rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.boxes.big {
+  width: 60rem;
+  height: 60rem;
+}
+
+.boxes.big .box {
+  transform: rotateZ(360deg);
+}
+
+.box {
+  width: 12.5rem;
+  height: 12.5rem;
+  background-image: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
+  background-size: 50rem 50rem;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.box::before {
+  content: "";
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgb(255, 226, 145);
+  position: absolute;
+  bottom: -1.5rem;
+  right: -0.9rem;
+  transform: skewX(45deg);
+  /* transform: rotateZ(250deg); */
+}
+
+.box::after {
+  content: "";
+  width: 1.5rem;
+  height: 100%;
+  background-color: rgb(226, 201, 56);
+  position: absolute;
+  top: 0.7rem;
+  right: -1.5rem;
+  transform: skewY(45deg);
+}

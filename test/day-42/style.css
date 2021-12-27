@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -15,4 +17,74 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #eee;
+}
+
+.container {
+  width: 30rem;
+  border-color: #000;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: #3e57db;
+  color: #fff;
+  padding: 2.5rem 3rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+.search {
+  padding: 1rem 1.4rem;
+  background-color: #14228f;
+  border: none;
+  border-radius: 5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  color: #fff;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.list-item {
+  background-color: #fff;
+  list-style: none;
+  overflow-y: auto;
+  height: 40rem;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  padding: 2rem;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  margin-left: 1rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.list-item li.hide {
+  display: none;
 }

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -14,5 +16,51 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+}
+
+.container {
+  max-width: 100rem;
+  height: 35rem;
+  background-color: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  padding: 3rem 5rem;
+}
+
+p {
+  margin: 1.5rem;
+}
+
+.code-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code {
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  font-size: 7rem;
+  border: 1px solid #eee;
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+}
+
+.code:valid {
+  border: 0.1rem solid blue;
+  box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
+}
+
+.info {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  background-color: #eee;
 }
