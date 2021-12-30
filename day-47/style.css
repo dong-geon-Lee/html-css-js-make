@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 1rem;
+}
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  padding: 5rem 8rem;
+  max-width: 77rem;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 2.8rem;
+  position: absolute;
+  top: 7rem;
+}
+
+.fa-quote-right {
+  left: 4rem;
+}
+
+.fa-quote-left {
+  right: 4rem;
+}
+
+.testimonial {
+  line-height: 2.8rem;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 1rem;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 0.4rem;
+  width: 100%;
+  /* animation: grow 1s linear infinite; */
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 2rem 3rem;
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    opacity: 0;
+  }
+}
